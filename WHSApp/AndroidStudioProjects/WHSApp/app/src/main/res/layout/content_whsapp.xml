@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/WHSL"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="capstone.whsapp.WHSAPP"
+    tools:showIn="@layout/activity_whsapp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="WHS"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#000000"
+        android:id="@+id/totalTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Information"
+        android:id="@+id/textView"
+        android:layout_below="@+id/totalTextView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Go Falcons!" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="75dp"
+        android:width="110dp"
+        android:text="Club"
+        android:id="@+id/clubbutton"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_toLeftOf="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="75dp"
+        android:width="110dp"
+        android:text="Calender"
+        android:id="@+id/Calenderbutton"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignBottom="@+id/clubbutton" />
+</RelativeLayout>
